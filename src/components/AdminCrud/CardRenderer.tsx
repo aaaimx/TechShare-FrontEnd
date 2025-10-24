@@ -39,14 +39,14 @@ const CardRenderer: React.FC<CardRendererProps> = ({ currentRecords, onDelete, o
                 const idValue = item[idKey];
 
                 return (
-                    <div key={`card-${idValue}-${index}`} className="bg-white rounded-lg shadow-sm w-full p-4 flex items-start space-x-4 relative shadow-black min-h-[120px]">
+                    <div key={`card-${idValue}-${index}`} className="bg-white rounded-lg w-full p-4 flex items-start space-x-4 relative min-h-[120px]">
                         {item.imagePath ? (
                             <img
                                 src={item.imagePath}
                                 alt={item.name}
-                                className="w-30 h-20 object-cover rounded-md border border-gray-300 outline-[3px] outline -outline-offset-1 outline-tertiary shadow-md shadow-black"
+                                className="w-30 h-20 object-cover rounded-md border border-gray-300 outline-[3px] outline -outline-offset-1 outline-tertiary"
                                 onError={(e) => {
-                                    e.currentTarget.src = "/fallback-image.png"; // Imagen de respaldo en caso de error
+                                    e.currentTarget.src = "/fallback-image.png";
                                 }}
                             />
                         ) : (
@@ -72,7 +72,7 @@ const CardRenderer: React.FC<CardRendererProps> = ({ currentRecords, onDelete, o
                         </div>
                         <div className="absolute top-2 right-2 flex space-x-2">
                             <button
-                                className="action-button transition-transform hover:scale-125" 
+                                className="action-button transition-transform hover:scale-125"
                                 onClick={() => onEdit(idValue)}
                             >
                                 <FaEdit />

@@ -3,7 +3,7 @@
   border-radius: 10px;
   padding: 4.2%;
   border: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   background-color: #ffffff;
   appearance: none;
 }
