@@ -163,6 +163,7 @@ export default function EditMaterialModal({
                                 }
                                 placeholder="Selecciona una subcategoría"
                             />
+                            {/*
                             <h2>Roles</h2>
                             <AsyncSelect
                                 className='border rounded-md border-primary mb-4'
@@ -179,6 +180,7 @@ export default function EditMaterialModal({
                                     })
                                 }
                             />
+                            */}
                         </>
                     )}
                 </ModalBase>

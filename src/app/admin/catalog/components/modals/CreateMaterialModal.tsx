@@ -177,6 +177,7 @@ export default function CreateMaterialModal({
                                 placeholder="Selecciona una subcategoría"
                                 required={true}
                             />
+                            {/*
                             <h2>Roles</h2>
                             <AsyncSelect
                                 className='border rounded-md border-primary mb-4'
@@ -193,6 +194,7 @@ export default function CreateMaterialModal({
                                     })
                                 }
                             />
+                            */}
                         </>
                     )}
                 </ModalBase>
