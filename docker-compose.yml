@@ -4,7 +4,7 @@ services:
     build: .
     image: techshare-frontend
     ports:
-      - "3000:4852"
+      - "4852:3000"
     volumes:
       - ./src:/app/src
     environment:
